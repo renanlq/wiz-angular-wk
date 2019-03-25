@@ -1,0 +1,25 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-wrapp {
+    display: flex;
+    margin: 40px auto 0;
+    width: 100%;
+    max-width: 1200px;
+
+    .widget-area {
+        min-width: 300px;
+    }
+    .content-area {
+        margin-left: 20px;
+        flex: 1;
+    }
+}
+
+.content-area {
+    border-radius: 8px;
+    background-color: white;    
+    box-shadow: 0 5px 10px #ccc;
+    padding: 15px;
+}

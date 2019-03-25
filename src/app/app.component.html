@@ -1,20 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div id="site-wrapp">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>  
+    <img src="data:img/png;base64,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" width="200" />
+  </div>
+  <section class="content-wrapp">
+    <div class="widget-area">      
+      <main-nav></main-nav>
+      <joke-widget></joke-widget>
+    </div>   
+    <div class="content-area">
+      <app-home></app-home>
+    </div> 
+  </section>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 

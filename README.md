@@ -1,3 +1,5 @@
+#1. Criação de componentes básicos
+
 # wiz-angular-wk
 Projeto base para treinamento Angular 2+
 

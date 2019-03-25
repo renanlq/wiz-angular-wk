@@ -1,0 +1,22 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    box-shadow: 1px 5px 5px #ccc;
+    li {
+        a {
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #e6e3e3;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background-color: darken($color: #e6e3e3, $amount: 40);
+                color: white;
+            }
+        }
+        border-bottom: 1px darken($color: #e6e3e3, $amount: 10) solid;
+    }
+}
