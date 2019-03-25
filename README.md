@@ -1,2 +1,2 @@
 # wiz-angular-wk
-Projeto base para treinamento Angular 2
+Projeto base para treinamento Angular 2+
