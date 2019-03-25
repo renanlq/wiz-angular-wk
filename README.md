@@ -30,3 +30,4 @@ As partes do curso serão dívidas em Branchs deste projeto, Assim será possív
 3. Criação de telas de um Crud com consumo de WebApi.
 4. Navegação por rotas e criação de módulos por contexto
 5. Componentes recicláveis
+6. Estrutura do projeto padrão Wiz para Angular
