@@ -1,0 +1,20 @@
+<form [formGroup]="formJoke" (ngSubmit)="sendform()">
+  <ul>
+    <li>
+      <label for="">
+        Título
+        <input type="text" formControlName="title">
+      </label>
+    </li>
+    <li>
+      <label for="">
+        Texto
+        <textarea type="text" formControlName="text"></textarea>
+      </label>
+    </li>
+    <li>
+        <button type="submit">Salvar</button>
+    </li>
+  </ul>
+  
+</form>

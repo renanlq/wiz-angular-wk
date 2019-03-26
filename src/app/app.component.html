@@ -7,11 +7,13 @@
   </div>
   <section class="content-wrapp">
     <div class="widget-area">      
-      <main-nav></main-nav>
+      <main-nav (onSelected)="changePage($event)"></main-nav>
       <joke-widget></joke-widget>
     </div>   
     <div class="content-area">
-      <app-home></app-home>
+      <app-home [hidden]="pageSelected != 1"></app-home>
+      <joke-list [hidden]="pageSelected != 2"></joke-list>
+      <joke-new [hidden]="pageSelected != 3"></joke-new>
     </div> 
   </section>
 </div>

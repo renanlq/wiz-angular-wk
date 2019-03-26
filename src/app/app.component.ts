@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Workshop de Angular 2+';
+  pageSelected: number = 1;
+
+
+  changePage(e): void {
+    this.pageSelected = e;
+  }
 }

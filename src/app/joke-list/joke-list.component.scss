@@ -1,0 +1,9 @@
+table {
+    box-shadow: 1px 5px 5px #ccc;
+    width: 100%;
+    th, td {
+        text-align: left;
+        padding: 15px;
+        border-bottom: 1px #ccc solid;
+    }
+}
