@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JokesService, JokeModel } from '../jokes.service';
 
 @Component({
   selector: 'joke-list',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./joke-list.component.scss']
 })
 export class JokeListComponent implements OnInit {
+  jokes: JokeModel[] = [];
 
-  constructor() { }
+  constructor(private jkServices: JokesService) { }
 
   ngOnInit() {
+    this.jkServices.list()
+      .subscribe(data => {
+        this.jokes = data;
+        console.log(this.jokes)
+      })
   }
 
 }

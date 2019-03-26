@@ -8,12 +8,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>asdfa</td>
-      <td>121212</td>
+    <tr *ngFor="let j of jokes">
+      <td>{{j.id}}</td>
+      <td>{{j.title}}</td>
+      <td>{{j.created_at | date:'dd/MM/yyyy'}}</td>
       <td>
         <a href="">editar</a>
+        &nbsp;
         <a href="">excluir</a>
       </td>
     </tr>
